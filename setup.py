@@ -2,10 +2,9 @@ import setuptools
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
-
 setuptools.setup(
-    name="pycreete-griffn",
-    version="0.0.1",
+    name="pycreete",
+    version="1.0.0",
     author="X-X#1313",
     author_email="kilgrif22033@gmail.com",
     description="a packge to process strings and make using encryption easier",
