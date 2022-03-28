@@ -33,21 +33,8 @@ class pycrypter:
             keys=[key[i:i+n] for i in range(0, len(key), n)]
             msg = [msg[i:i+n] for i in range(0, len(msg), n)]
             decrypted=""
-            tmp=[]
-            for char in expect:
-                for keyx in keys:
-                    if keyx[4] == char:  tmp.append(keyx)
-                    else:  pass
-            keys = tmp
-            for code in msg:
-                try:
-                    decrypted += expect[keys.index(code)]
-                except IndexError:
-                    try:
-                        print(keys.index(code),",",len(expect))
-                        print(keys)
-                    except:
-                        print("code is not found in keys,dumping key\n",key)
+            for key in msg:
+                decrypted += keys[keys.index(key)][4]
             return decrypted
         def encrypt(key,msg,expect=defualtexpect):
             n=5
