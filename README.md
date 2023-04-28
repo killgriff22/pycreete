@@ -1,5 +1,5 @@
 # PYMINT
-an encryption method thats incredibly strong, secure enough to beat out sha256 encryption
+~~an encryption method thats incredibly strong, secure enough to beat out sha256 encryption~~ no it isn't
 # USAGE
 Generate a key using an expected string for the output to align to<br>
 without the key you can not decrypt or encrypt ANYTHING<br>
